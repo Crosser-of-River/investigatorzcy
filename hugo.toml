@@ -1,4 +1,10 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://crosser-of-river.github.io/'
+languageCode = 'zh-cn'
+defaultContentLanguage = "zh-cn"
+title = 'investigatorzcy的自留地'
 theme = "PaperMod"
+defaultTheme = "auto"
+disableThemeToggle = true
+
+[params]
+  description = "这是我的个人博客"
