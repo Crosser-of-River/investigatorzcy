@@ -8,3 +8,6 @@ disableThemeToggle = true
 
 [params]
   description = "这是我的个人博客"
+   [params.homeInfoParams]
+    Title = "Hi there 👋"
+    Content = "Can be Info, links, about..."
