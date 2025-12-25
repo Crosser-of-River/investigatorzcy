@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>investigatorzcy的自留地</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on investigatorzcy的自留地</description>
+    <title>日记 on investigatorzcy的自留地</title>
+    <link>http://localhost:1313/posts/diaries/</link>
+    <description>Recent content in 日记 on investigatorzcy的自留地</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 24 Dec 2025 15:31:49 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/diaries/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dec.</title>
       <link>http://localhost:1313/posts/diaries/25-12/</link>
@@ -16,27 +16,6 @@
       <description>&lt;p&gt;12/24&lt;/p&gt;
 &lt;p&gt;摆烂的假期一天:)&lt;br&gt;
 好像啥也没干() 中午购买了超市的烧鸭, 感慨道这只鸭死得相当冤枉, 概因其并不好吃. 母亲单位发了糖葫芦, 她怕吃了长胖, 带给了我. 高高兴兴吃了, 确实不错. 今天晚上加中午睡了11小时, 可谓睡眠充足, 至少快抵得上我一部分上学时睡眠时长的两倍了, 而代价就是整个下午都在昏睡中度过. 也不错, 平凡的日子就是不错的. 总是平凡的日子比不平凡的多(否则也称不上平凡了), 可平凡的时间也过得更快. 最后占据记忆的, 竟是那些少数的不平凡了.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>小记</title>
-      <link>http://localhost:1313/posts/crosser-of-river/%E5%B0%8F%E8%AE%B0/</link>
-      <pubDate>Wed, 24 Dec 2025 00:00:51 +0800</pubDate>
-      <guid>http://localhost:1313/posts/crosser-of-river/%E5%B0%8F%E8%AE%B0/</guid>
-      <description>&lt;p&gt;啊, 终于搞好博客了2333(虽然我什么也没有做( )&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/crosser-of-river/my-first-post/</link>
-      <pubDate>Wed, 17 Dec 2025 20:48:53 +0800</pubDate>
-      <guid>http://localhost:1313/posts/crosser-of-river/my-first-post/</guid>
-      <description>&lt;p&gt;test:)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/%E6%9C%AA%E5%91%BD%E5%90%8D/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/%E6%9C%AA%E5%91%BD%E5%90%8D/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

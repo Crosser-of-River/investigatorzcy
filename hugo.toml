@@ -8,6 +8,36 @@ disableThemeToggle = true
 
 [params]
   description = "这是我的个人博客"
-   [params.homeInfoParams]
-    Title = "Hi there 👋"
-    Content = "Can be Info, links, about..."
+  BreadCrumbs = true
+  breadcrumbSeparator = ">"
+  [params.homeInfoParams]
+    Title = "你好, 我是侦查员只吃鱼, 很高兴认识你. "
+    Content = "不知道是否是爱好者的数皮&平凡的大一学生"
+  [params.profileMode]
+    enabled = true
+    imageHeight = 120
+    imageTitle = "头像"
+    imageUrl = "https://cdn.luogu.com.cn/upload/image_hosting/r5093zxy.png"
+    imageWidth = 120
+    subtitle = "不知道是否是爱好者的数皮&平凡的大一学生"
+    title = "investigatorzcy"
+
+  [[params.profileMode.buttons]]
+    name = "Crosser-of-River"
+    url = "/posts/Crosser-of-River/"
+
+  [[params.profileMode.buttons]]
+    name = "zhihu"
+    url = "https://www.zhihu.com/people/xian-ting-xin-bu-11-49"
+
+  [[params.profileMode.buttons]]
+    name = "math"
+    url = "/posts/math/"  
+
+  [[params.profileMode.buttons]]
+    name = "diaries"
+    url = "/posts/diaries/"  
+
+  [[params.profileMode.buttons]]
+    name = "archives"
+    url = "/archives/"  

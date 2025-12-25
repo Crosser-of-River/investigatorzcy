@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "606c23af2a2fa6c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9060dc428e7cf21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96ad1eec7b65c555",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/diaries/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          },
+          {
+            "id": "e2032264ebf05ab6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/Crosser-of-River/_index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b3219170d9df26fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "508ddd795975e23b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30eb1fbaacd3fe0e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "2994ab62ed98064a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "0faf0db0eeab1c18",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f7dc132bc3b6561b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0fe8240f2621cd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1dc6102bf86119f5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/my-first-post.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "my-first-post 的反向链接列表"
+            }
+          },
+          {
+            "id": "a8ceeb72c64f6a21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/my-first-post.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "my-first-post 的出链列表"
+            }
+          },
+          {
+            "id": "c2baf65a31cba91c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f3930760ea5f9475",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "6296817b830c01a7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/my-first-post.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "my-first-post 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
+    }
+  },
+  "active": "e2032264ebf05ab6",
+  "lastOpenFiles": [
+    "posts/math/_index.md",
+    "posts/diaries/_index.md",
+    "posts/Crosser-of-River/_index.md",
+    "未命名.md",
+    "posts/Crosser-of-River/小记.md",
+    "posts/Crosser-of-River/my-first-post.md",
+    "posts/Crosser-of-River",
+    "posts/diaries/25-12.md",
+    "posts/渡河者说/my-first-post.md",
+    "posts/渡河者说/小记.md",
+    "archives.md",
+    "posts/diaries/新建 文本文档.txt",
+    "posts/math/新建 文本文档.txt",
+    "posts/diaries",
+    "posts/diar",
+    "posts/diary",
+    "posts/math",
+    "posts/my-first-post.md",
+    "posts/小记.md",
+    "posts/数学",
+    "posts/新建文件夹",
+    "posts/渡河者说",
+    "未命名.canvas"
+  ]
+}
