@@ -41,3 +41,6 @@ disableThemeToggle = true
   [[params.profileMode.buttons]]
     name = "archives"
     url = "/archives/"  
+  [[params.profileMode.buttons]]
+    name = "友情链接(diamond_153)"
+    url = "https://diamond153.netlify.app/"  
