@@ -24,7 +24,7 @@ disableThemeToggle = true
 
   [[params.profileMode.buttons]]
     name = "Crosser-of-River"
-    url = "/posts/Crosser-of-River/"
+    url = "/posts/crosser-of-river/"
 
   [[params.profileMode.buttons]]
     name = "zhihu"
