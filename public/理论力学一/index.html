@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Dec. | investigatorzcy的自留地</title>
+<title>理论力学(一) | investigatorzcy的自留地</title>
 <meta name="keywords" content="">
-<meta name="description" content="12/24
-摆烂的假期一天:)
-好像啥也没干() 中午购买了超市的烧鸭, 感慨道这只鸭死得相当冤枉, 概因其并不好吃. 母亲单位发了糖葫芦, 她怕吃了长胖, 带给了我. 高高兴兴吃了, 确实不错. 今天晚上加中午睡了11小时, 可谓睡眠充足, 至少快抵得上我一部分上学时睡眠时长的两倍了, 而代价就是整个下午都在昏睡中度过. 也不错, 平凡的日子就是不错的. 总是平凡的日子比不平凡的多(否则也称不上平凡了), 可平凡的时间也过得更快. 最后占据记忆的, 竟是那些少数的不平凡了.
-12/28
-换位思考谁都能够做到(至少并不是我在处世中遇到的障碍), 求同存异则是更为困难的. 常常是过度的换位思考让我们忽略了彼此的差异, 在沟通面前的懒惰激发了情绪的产生.">
+<meta name="description" content="我们定义势能为一个位置的函数 $V: \mathbb{R}^n\to\mathbb{R}$ , 满足 $\vec{F}=-\nabla V$ . 容易发现这样的函数在差一个常数的意义下唯一确定.
+Prop. 机械能守恒
+pf.  由链式法则, $$\frac{dE}{dt}=\frac{dV}{dt}&#43;\frac{dK}{dt}=-\vec{F}\cdot\vec{v}&#43;m\vec{v}\cdot\vec{a}=0$$
+def. 定义系统的拉格朗日量$$\mathscr{L}=K-V$$我们假设$\mathscr{L}$ 与位置的二阶及以上导数无关(我暂时还不清楚为什么要这么假设)
+对于任意道路 $\vec{q}(t): [t_0,t_1]\to\mathbb{R}^n$, 定义其作用量泛函 $S[q(t)]=\int_{t_0}^{t_1}\mathscr{L}(t,q(t),q&rsquo;(t))dt$
+为了便于处理, 我们暂时假设运动是一维的.
+Thm. Assume $x:[t_0, t_1]\to \mathbb{R}$ is a smooth path that extremizes the action functional
+$S=\int_{t_0}^{t_1}\mathscr{L}dt$ for all possible smooth paths $q:[t_0, t_1]\to\mathbb{R}$ with the same end points: $q(t_0) =x(t_0),q(t_1)=x(t_1)$ . Assume the Lagrangian $\mathscr{L}=\mathscr{L}(q(t),q&rsquo;(t),t)$ only depends on $q(t)$, its time derivative $q&rsquo;(t)$ and time $t$. Then $x(t)$ satisfies the Euler-Lagrange Equation   $$\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;}=\frac{d\mathscr{L}}{dx}$$
+pf.  设$x(t)$为使 $S$ 最小的道路, 则对于任意 $\gamma:[t_0,t_1]\to\mathbb{R},\ \gamma(t_0)=\gamma(t_1)=0$, $\epsilon$ 为一个小量, 有 $S[x(t)&#43;\epsilon\gamma(t)]&gt;S[x(t)]$. 设 $f(s)=S[x(t)&#43;s\gamma(t)]$, 则$\frac{d}{ds}f(0)=0$.
+$$\begin{aligned}\frac{df}{ds}(0)&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma&#43;\frac{d\mathscr{L}}{dx&rsquo;}\gamma&rsquo;)dt\
+&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma&#43;\frac{d}{dt}(\frac{d\mathscr{L}}{dx&rsquo;}\gamma)-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt\
+&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt&#43;\frac{d}{dt}(\frac{d\mathscr{L}}{dx&rsquo;}\gamma)\big|{t_0}^{t_1}\
+&amp;=\int{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt\
+&amp;=0
+\end{aligned}$$
+由于 $\gamma$ 的任意性, $\frac{d\mathscr{L}}{dx}-\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;}=0$.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/diaries/25-12/">
+<link rel="canonical" href="http://localhost:1313/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E4%B8%80/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.fd5566c526ae48aadabd950798a2dc3568536401560eae5caac3765a42a9e7b5.css" integrity="sha256-/VVmxSauSKravZUHmKLcNWhTZAFWDq5cqsN2WkKp57U=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -22,7 +33,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh-cn" href="http://localhost:1313/posts/diaries/25-12/">
+<link rel="alternate" hreflang="zh-cn" href="http://localhost:1313/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E4%B8%80/">
 <noscript>
     <style>
         #theme-toggle,
@@ -114,7 +125,7 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Dec.
+      理论力学(一)
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
           <path
@@ -122,15 +133,27 @@
         </svg>
       </span>
     </h1>
-    <div class="post-meta"><span title='2025-12-24 15:31:49 +0800 CST'>December 24, 2025</span>
+    <div class="post-meta"><span title='2025-12-25 10:24:49 +0800 CST'>December 25, 2025</span>
 
 </div>
   </header> 
-  <div class="post-content"><p>12/24</p>
-<p>摆烂的假期一天:)<br>
-好像啥也没干() 中午购买了超市的烧鸭, 感慨道这只鸭死得相当冤枉, 概因其并不好吃. 母亲单位发了糖葫芦, 她怕吃了长胖, 带给了我. 高高兴兴吃了, 确实不错. 今天晚上加中午睡了11小时, 可谓睡眠充足, 至少快抵得上我一部分上学时睡眠时长的两倍了, 而代价就是整个下午都在昏睡中度过. 也不错, 平凡的日子就是不错的. 总是平凡的日子比不平凡的多(否则也称不上平凡了), 可平凡的时间也过得更快. 最后占据记忆的, 竟是那些少数的不平凡了.</p>
-<p>12/28
-换位思考谁都能够做到(至少并不是我在处世中遇到的障碍), 求同存异则是更为困难的. 常常是过度的换位思考让我们忽略了彼此的差异, 在沟通面前的懒惰激发了情绪的产生.</p>
+  <div class="post-content"><p>我们定义势能为一个位置的函数 $V: \mathbb{R}^n\to\mathbb{R}$ , 满足 $\vec{F}=-\nabla V$ . 容易发现这样的函数在差一个常数的意义下唯一确定.</p>
+<p><strong>Prop</strong>. 机械能守恒<br>
+<em>pf.</em>  由链式法则, $$\frac{dE}{dt}=\frac{dV}{dt}+\frac{dK}{dt}=-\vec{F}\cdot\vec{v}+m\vec{v}\cdot\vec{a}=0$$</p>
+<p><strong>def</strong>. 定义系统的拉格朗日量$$\mathscr{L}=K-V$$我们假设$\mathscr{L}$ 与位置的二阶及以上导数无关(我暂时还不清楚为什么要这么假设)<br>
+对于任意道路 $\vec{q}(t): [t_0,t_1]\to\mathbb{R}^n$, 定义其作用量泛函 $S[q(t)]=\int_{t_0}^{t_1}\mathscr{L}(t,q(t),q&rsquo;(t))dt$</p>
+<p>为了便于处理, 我们暂时假设运动是一维的.<br>
+<strong>Thm</strong>. Assume $x:[t_0, t_1]\to \mathbb{R}$ is a smooth path that extremizes the action functional
+$S=\int_{t_0}^{t_1}\mathscr{L}dt$ for all possible smooth paths $q:[t_0, t_1]\to\mathbb{R}$ with the same end points: $q(t_0) =x(t_0),q(t_1)=x(t_1)$ . Assume the Lagrangian $\mathscr{L}=\mathscr{L}(q(t),q&rsquo;(t),t)$ only depends on $q(t)$, its time derivative $q&rsquo;(t)$ and time $t$. Then $x(t)$ satisfies the Euler-Lagrange Equation   $$\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;}=\frac{d\mathscr{L}}{dx}$$
+<em>pf.</em>  设$x(t)$为使 $S$ 最小的道路, 则对于任意 $\gamma:[t_0,t_1]\to\mathbb{R},\ \gamma(t_0)=\gamma(t_1)=0$, $\epsilon$ 为一个小量, 有 $S[x(t)+\epsilon\gamma(t)]&gt;S[x(t)]$. 设 $f(s)=S[x(t)+s\gamma(t)]$, 则$\frac{d}{ds}f(0)=0$.<br>
+$$\begin{aligned}\frac{df}{ds}(0)&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma+\frac{d\mathscr{L}}{dx&rsquo;}\gamma&rsquo;)dt\
+&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma+\frac{d}{dt}(\frac{d\mathscr{L}}{dx&rsquo;}\gamma)-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt\
+&amp;=\int_{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt+\frac{d}{dt}(\frac{d\mathscr{L}}{dx&rsquo;}\gamma)\big|<em>{t_0}^{t_1}\
+&amp;=\int</em>{t_0}^{t_1}(\frac{d\mathscr{L}}{dx}\gamma-(\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;})\gamma)dt\
+&amp;=0
+\end{aligned}$$
+由于 $\gamma$ 的任意性, $\frac{d\mathscr{L}}{dx}-\frac{d}{dt}\frac{d\mathscr{L}}{dx&rsquo;}=0$.</p>
+<p>(又及: 我发现好像在这个证明过程中并没有用到拉格朗日量本身的性质而只用到了它的光滑性)</p>
 
 
   </div>
