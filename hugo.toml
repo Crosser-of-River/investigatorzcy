@@ -47,13 +47,13 @@ ignoreFiles = ['(^|/)_templates(/|$)']
     name = "友情链接(diamond_153)"
     url = "https://diamond153.netlify.app/"
 
-# 在 README 的评论设置步骤完成后填入 ID，再启用。
+# giscus 评论配置；仓库与分类 ID 来自 giscus 配置页面。
 [params.giscus]
-  enabled = false
+  enabled = true
   repo = "Crosser-of-River/investigatorzcy"
-  repoID = ""
+  repoID = "R_kgDOQqb69g"
   category = "Announcements"
-  categoryID = ""
+  categoryID = "DIC_kwDOQqb69s4DHAre"
 
 # 音乐放在 static/music/，例如 src = "/music/background.mp3"。
 [params.music]
