@@ -1,0 +1,7 @@
+/public/
+/resources/_gen/
+/.hugo_build.lock
+.DS_Store
+content/.obsidian/workspace*.json
+content/.obsidian/cache/
+content/.trash/

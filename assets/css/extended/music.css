@@ -1,0 +1,10 @@
+.blog-music {
+  max-width: 360px;
+  margin: 0 auto 32px;
+  padding: 12px 20px;
+  color: var(--secondary);
+  text-align: center;
+}
+.blog-music summary { cursor: pointer; }
+.blog-music audio { display: block; width: 100%; margin-top: 12px; }
+.blog-music p { margin-top: 6px; font-size: 13px; }
