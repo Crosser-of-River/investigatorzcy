@@ -58,5 +58,5 @@ disableThemeToggle = true
 # 音乐放在 static/music/，例如 src = "/music/background.mp3"。
 [params.music]
   enabled = true
-  src = "许嵩 - 乌鸦.mp3"
+  src = "/music/许嵩 - 乌鸦.mp3"
   title = "没什么品味的背景音乐-乌鸦"
