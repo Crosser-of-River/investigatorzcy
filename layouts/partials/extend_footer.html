@@ -1,4 +1,9 @@
-{{- with site.Params.music -}}
+{{- $music := site.Params.music -}}
+{{- /* A page music block replaces the site default, including enabled=false. */ -}}
+{{- if isset .Params "music" -}}
+  {{- $music = .Params.music -}}
+{{- end -}}
+{{- with $music -}}
 {{- if and .enabled .src -}}
 <aside class="blog-music" aria-label="背景音乐播放器">
   <details>
