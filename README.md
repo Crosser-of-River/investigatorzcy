@@ -27,7 +27,7 @@
 
 ## 一次性启用评论
 
-采用 giscus，读者使用 GitHub 账号留言。
+采用 giscus，读者使用 GitHub 账号留言。当前仓库已完成配置，以下步骤仅供以后重新配置时参考。
 
 1. 在本仓库 **Settings → General → Features** 启用 **Discussions**。
 2. 访问 <https://giscus.app/zh-CN>，按页面提示安装 giscus GitHub App，仅授权本仓库。
@@ -51,7 +51,7 @@
 - 每次向 `main` 推送或手动触发 Actions，会使用固定的 Hugo `0.147.9` 和仓库锁定的 PaperMod 子模块版本，从干净的临时目录构建。拉取请求只构建，不发布。
 - 跨仓库部署仍使用原有 Actions secret `PERSONAL_TOKEN`。如果构建成功、部署失败，检查令牌是否过期、是否有写入目标仓库的权限；只在 GitHub Secrets 中设置，不把令牌写进文件或发给别人。
 - 不再跟踪生成的 `public/` 目录；旧文件可能只存在于旧构建结果而没有 Markdown 源文，删除这些产物前已保留在 Git 历史中。新部署会按当前源码生成页面，缺少源文的旧页面不会继续保留；如需恢复，先从旧提交找回正文并补成文章。
-- 已发现“理论力学一”缺少 Markdown 源文，额外保存了 `docs/legacy-pages/theoretical-mechanics.html` 供恢复正文（外观引用的旧样式可能不可用）。上线前应确认是否恢复该文章；此备份不会发布到博客。
+- 已发现“理论力学一”缺少 Markdown 源文，额外保存了 `docs/legacy-pages/theoretical-mechanics.html` 供恢复正文（外观引用的旧样式可能不可用）。已按作者要求仅保留备份，不恢复展示；此备份不会发布到博客。
 - 若文章没出现，先检查 `draft` 是否为 `false`、日期是否在未来，以及 Actions 是否成功。
 
 ## 可选：本地预览
