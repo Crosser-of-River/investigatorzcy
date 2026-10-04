@@ -1,0 +1,13 @@
+{{- with site.Params.music -}}
+{{- if and .enabled .src -}}
+<aside class="blog-music" aria-label="背景音乐播放器">
+  <details>
+    <summary>♫ {{ .title | default "背景音乐" }}</summary>
+    <audio controls loop preload="none" src="{{ .src | relURL }}" aria-label="{{ .title | default "背景音乐" }}">
+      你的浏览器不支持音频播放。
+    </audio>
+    <p>点击播放即可收听。</p>
+  </details>
+</aside>
+{{- end -}}
+{{- end -}}
