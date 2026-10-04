@@ -3,26 +3,26 @@ languageCode = 'zh-cn'
 defaultContentLanguage = "zh-cn"
 title = 'investigatorzcy的自留地'
 theme = "PaperMod"
-defaultTheme = "auto"
-disableThemeToggle = true
 ignoreFiles = ['(^|/)_templates(/|$)']
 
 [params]
+defaultTheme = "auto"
+disableThemeToggle = true
   comments = true
   description = "这是我的个人博客"
   BreadCrumbs = true
   breadcrumbSeparator = ">"
   [params.homeInfoParams]
     Title = "你好, 我是侦查员只吃鱼, 很高兴认识你. "
-    Content = "不知道是否是爱好者的数皮&平凡的大一学生"
+    Content = "不太痴愚的吃鱼"
   [params.profileMode]
     enabled = true
     imageHeight = 120
     imageTitle = "头像"
     imageUrl = "https://cdn.luogu.com.cn/upload/image_hosting/r5093zxy.png"
     imageWidth = 120
-    subtitle = "不知道是否是爱好者的数皮&平凡的大一学生"
-    title = "investigatorzcy"
+    subtitle = "不太痴愚的吃鱼"
+    title = "Chiyu"
 
   [[params.profileMode.buttons]]
     name = "Crosser-of-River"
