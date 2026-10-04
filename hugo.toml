@@ -1,7 +1,7 @@
 baseURL = 'https://crosser-of-river.github.io/'
 languageCode = 'zh-cn'
 defaultContentLanguage = "zh-cn"
-title = 'ZCY's Blog'
+title = 'ZCY’s Blog'
 theme = "PaperMod"
 ignoreFiles = ['(^|/)_templates(/|$)']
 
