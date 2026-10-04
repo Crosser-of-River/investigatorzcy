@@ -1,7 +1,7 @@
 baseURL = 'https://crosser-of-river.github.io/'
 languageCode = 'zh-cn'
 defaultContentLanguage = "zh-cn"
-title = '吃鱼的自留地'
+title = 'ZCY's Blog'
 theme = "PaperMod"
 ignoreFiles = ['(^|/)_templates(/|$)']
 
@@ -22,7 +22,7 @@ disableThemeToggle = true
     imageUrl = "https://cdn.luogu.com.cn/upload/image_hosting/r5093zxy.png"
     imageWidth = 120
     subtitle = "不太痴愚的吃鱼"
-    title = "ZCY's Blog"
+    title = "吃鱼的自留地"
 
   [[params.profileMode.buttons]]
     name = "Crosser-of-River"
