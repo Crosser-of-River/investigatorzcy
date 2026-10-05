@@ -21,11 +21,16 @@
 {{- else }}
 <body id="top">
 {{- end }}
+    <div id="site-page">
     {{ partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .RelPermalink .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    </div>
+    {{ partial "music-player.html" . }}
+    {{- $navigation := resources.Get "js/music-navigation.js" | minify | fingerprint -}}
+    <script defer src="{{ $navigation.RelPermalink }}" integrity="{{ $navigation.Data.Integrity }}"></script>
 </body>
 
 </html>

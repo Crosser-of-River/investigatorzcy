@@ -6,5 +6,6 @@
   text-align: center;
 }
 .blog-music summary { cursor: pointer; }
+.blog-music[hidden] { display: none; }
 .blog-music audio { display: block; width: 100%; margin-top: 12px; }
 .blog-music p { margin-top: 6px; font-size: 13px; }

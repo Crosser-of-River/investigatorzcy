@@ -1,0 +1,17 @@
+{{- $music := site.Params.music -}}
+{{- /* A page music block replaces the site default, including enabled=false. */ -}}
+{{- if isset .Params "music" -}}
+  {{- $music = .Params.music -}}
+{{- end -}}
+{{- $enabled := and $music.enabled $music.src -}}
+{{- with dict "enabled" $enabled "src" $music.src "title" $music.title -}}
+<aside {{ if not (and .enabled .src) }}hidden{{ end }} id="persistent-music" class="blog-music" aria-label="背景音乐播放器">
+  <details open>
+    <summary id="music-title">♫ {{ .title | default "背景音乐" }}</summary>
+    <audio id="music-audio" controls loop preload="none" {{ with .src }}src="{{ . | relURL }}"{{ end }} aria-label="{{ .title | default "背景音乐" }}">
+      你的浏览器不支持音频播放。
+    </audio>
+    <p id="music-status" role="status">点击上方 ▶ 播放；音乐不会自动开始。</p>
+  </details>
+</aside>
+{{- end -}}
