@@ -1,6 +1,6 @@
 ---
 title: 日记
-layout: articles
+layout: column
 summary: 按时间浏览日常记录
 ---
 按年月整理的日常记录。

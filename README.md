@@ -33,7 +33,21 @@
 | 渡河者说 | 围绕一个主题展开的随笔 | `posts/Crosser-of-River` | 渡河者说 |
 | 日记 | 按日期记录日常生活 | `posts/diaries` | 日记 |
 
-主栏目由文章所在目录决定。数学笔记、渡河者说和日记各自按发布日期从新到旧列出文章，不再设置侧栏分栏目，也无需填写 `subcategory`。
+主栏目由文章所在目录决定。各主栏目的侧栏只保留“全部”和“其他”，文章按发布日期从新到旧排列。未指定分栏目、或所属分栏目尚未创建的文章会出现在“其他”。
+
+分类功能仍保留。以后添加分栏目时，在主栏目目录中新建一个英文文件夹，其中创建 `_index.md`，例如：
+
+```yaml
+---
+title: 你的分栏目名
+layout: column
+parentSection: /posts/math
+filterCategory: 你的分栏目名
+weight: 10
+---
+```
+
+`parentSection` 填对应主栏目路径（数学笔记为 `/posts/math`、渡河者说为 `/posts/Crosser-of-River`、日记为 `/posts/diaries`）。`weight` 越小越靠前。相关文章的属性填写 `subcategory: "你的分栏目名"`；旧 TOML 格式填写 `subcategory = '你的分栏目名'`。没有具体分栏目时，模板中的 `subcategory` 留空即可。
 
 日记标题统一为“2026 年 10 月日记”等年月格式。PDF 放在对应文章文件夹里，并在正文提供下载链接。
 
