@@ -1,0 +1,44 @@
+{{- define "main" }}
+{{- $root := . }}
+{{- with .Params.parentSection }}{{ $root = site.GetPage . }}{{ end }}
+{{- $current := . }}
+{{- $pages := partial "column-pages.html" (dict "root" $root "filter" .) }}
+<div class="column-layout">
+  <aside class="column-sidebar">
+    <nav aria-label="{{ $root.Title }}分栏目">
+      <h2>{{ $root.Title }}</h2>
+      <ul>
+        <li><a href="{{ $root.RelPermalink }}" {{ if eq $current.RelPermalink $root.RelPermalink }}aria-current="page"{{ end }}><span>全部</span><span class="column-count">{{ len $root.RegularPagesRecursive }}</span></a></li>
+        {{- range $root.Sections.ByWeight }}
+        {{- $items := partial "column-pages.html" (dict "root" $root "filter" .) }}
+        <li><a href="{{ .RelPermalink }}" {{ if eq $current.RelPermalink .RelPermalink }}aria-current="page"{{ end }}><span>{{ .Title }}</span><span class="column-count">{{ len $items }}</span></a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </aside>
+  <section class="column-content" aria-label="文章列表">
+    <header class="page-header">
+      {{- if ne .RelPermalink $root.RelPermalink }}<p class="column-parent"><a href="{{ $root.RelPermalink }}">{{ $root.Title }}</a></p>{{ end }}
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{- with .Content }}<div class="post-content">{{ . }}</div>{{ end }}
+    {{- if $pages }}
+    {{- $paginator := .Paginate (sort $pages "Date" "desc") }}
+    {{- range $paginator.Pages }}
+    <article class="post-entry">
+      <header class="entry-header"><h2>{{ .Title }}</h2></header>
+      <div class="entry-content"><p>{{ .Summary | plainify | htmlUnescape }}</p></div>
+      <footer class="entry-footer"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 年 1 月 2 日" }}</time></footer>
+      <a class="entry-link" aria-label="{{ .Title | plainify }}" href="{{ .RelPermalink }}"></a>
+    </article>
+    {{- end }}
+    {{- if gt $paginator.TotalPages 1 }}
+    <footer class="page-footer"><nav class="pagination">
+      {{- if $paginator.HasPrev }}<a class="prev" href="{{ $paginator.Prev.URL }}">« 上一页</a>{{ end }}
+      {{- if $paginator.HasNext }}<a class="next" href="{{ $paginator.Next.URL }}">下一页 »</a>{{ end }}
+    </nav></footer>
+    {{- end }}
+    {{- else }}<p class="column-empty">这里还没有文章。</p>{{ end }}
+  </section>
+</div>
+{{- end }}
