@@ -1,7 +1,7 @@
 ---
-title: 2026 年
+title: 其他
 layout: column
 parentSection: /posts/diaries
-weight: 10
-filterYear: "2026"
+filterOther: true
+weight: 1000
 ---
