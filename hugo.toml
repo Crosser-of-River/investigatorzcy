@@ -25,27 +25,50 @@ disableThemeToggle = true
     title = "吃鱼的自留地"
 
   [[params.profileMode.buttons]]
-    name = "Crosser-of-River"
+    name = "数学笔记"
+    url = "/posts/math/"
+
+  [[params.profileMode.buttons]]
+    name = "渡河者说"
     url = "/posts/crosser-of-river/"
 
   [[params.profileMode.buttons]]
-    name = "zhihu"
+    name = "日记"
+    url = "/posts/diaries/"
+
+  [[params.profileMode.buttons]]
+    name = "时间线"
+    url = "/archives/"
+
+  [[params.externalLinks]]
+    name = "知乎"
     url = "https://www.zhihu.com/people/xian-ting-xin-bu-11-49"
 
-  [[params.profileMode.buttons]]
-    name = "math"
-    url = "/posts/math/"  
-
-  [[params.profileMode.buttons]]
-    name = "diaries"
-    url = "/posts/diaries/"  
-
-  [[params.profileMode.buttons]]
-    name = "archives"
-    url = "/archives/"  
-  [[params.profileMode.buttons]]
-    name = "友情链接(diamond_153)"
+  [[params.externalLinks]]
+    name = "友情链接：diamond_153"
     url = "https://diamond153.netlify.app/"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archives"
+    name = "时间线"
+    url = "/archives/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
 
 # giscus 评论配置；仓库与分类 ID 来自 giscus 配置页面。
 [params.giscus]
