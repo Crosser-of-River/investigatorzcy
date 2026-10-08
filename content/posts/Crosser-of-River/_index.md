@@ -1,6 +1,6 @@
 ---
 title: 渡河者说
-layout: column
+layout: articles
 summary: 千万渡河者中的一员说的话
 ---
 千万渡河者中的一员说的话。这里收录围绕生活、阅读与想法展开的随笔。

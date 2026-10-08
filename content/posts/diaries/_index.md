@@ -1,7 +1,7 @@
 ---
 title: 日记
-layout: column
-summary: 按年份浏览日常记录
+layout: articles
+summary: 按时间浏览日常记录
 ---
 按年月整理的日常记录。
 
