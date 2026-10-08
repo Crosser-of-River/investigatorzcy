@@ -53,8 +53,11 @@
     const id = ++serial;
     controller?.abort();
     controller = new AbortController();
+    const requestController = controller;
+    // A stalled fetch must fall back to normal navigation instead of swallowing the click.
+    const timeout = setTimeout(() => requestController.abort(), 8000);
     try {
-      const response = await fetch(url.href, { signal: controller.signal });
+      const response = await fetch(url.href, { signal: requestController.signal, cache: 'no-cache' });
       if (!response.ok || !response.headers.get('content-type')?.includes('text/html')) throw new Error('Not a page');
       const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
       const next = doc.getElementById('site-page');
@@ -84,7 +87,9 @@
       else scrollTo(0, 0);
       window.dispatchEvent(new Event('scroll'));
     } catch (error) {
-      if (error.name !== 'AbortError' && id === serial) location.assign(url.href);
+      if (id === serial) location.assign(url.href);
+    } finally {
+      clearTimeout(timeout);
     }
   }
 
