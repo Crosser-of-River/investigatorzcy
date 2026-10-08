@@ -1,0 +1,20 @@
+.profile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--secondary);
+}
+.profile-links-title {
+    font-weight: 600;
+}
+.profile-links a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.profile-links a:hover {
+    color: var(--primary);
+}
