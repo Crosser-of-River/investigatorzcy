@@ -22,7 +22,7 @@ disableThemeToggle = true
     imageTitle = "头像"
     imageUrl = "https://cdn.luogu.com.cn/upload/image_hosting/r5093zxy.png"
     imageWidth = 120
-    subtitle = "不太痴愚的吃鱼"
+    subtitle = "一个学数学的大二学生"
     title = "吃鱼的自留地"
 
   [[params.profileMode.buttons]]
