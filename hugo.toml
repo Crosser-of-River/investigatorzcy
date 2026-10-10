@@ -74,3 +74,7 @@ disableThemeToggle = true
   enabled = true
   src = "/music/许嵩 - 乌鸦.mp3"
   title = "没什么品味的背景音乐-乌鸦"
+
+# 保留正文中的单次换行，与 Obsidian 的常用显示方式一致。
+[markup.goldmark.renderer]
+  hardWraps = true
